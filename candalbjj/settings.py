@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+from keys import SECRET_KEY_ALT, MAPS_API_KEY_ALT
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,13 +22,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '@nta)jv(9i6mauda)^ox6_&3&gcyr-+g$krr+4#=sq$te^nxr_'
+
+SECRET_KEY = os.getenv('SECRET_KEY', SECRET_KEY_ALT)
+MAPS_API_KEY = os.getenv('MAPS_API_KEY', MAPS_API_KEY_ALT)
+
+# SECRET_KEY = '@nta)jv(9i6mauda)^ox6_&3&gcyr-+g$krr+4#=sq$te^nxr_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 # Allow heroku to host as well as local server
-ALLOWED_HOSTS = ['candalbjj.herokuapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['candalbjj.herokuapp.com', '127.0.0.1:8000', '127.0.0.1']
 
 
 # Application definition
@@ -137,3 +142,8 @@ EMAIL_HOST_PASSWORD = 'obrwtdsdxkuslvpx'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'default from email'
+
+# Secure cookies
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
