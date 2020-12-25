@@ -1,1 +1,1 @@
-web: gunicorn candalbjj.wsgi --log-file =
+web: gunicorn candalbjj.wsgi --log-file -
