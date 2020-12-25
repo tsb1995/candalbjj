@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '@nta)jv(9i6mauda)^ox6_&3&gcyr-+g$krr+4#=sq$te^nxr_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# Allow heroku to host as well as local server
+ALLOWED_HOSTS = ['candalbjj.herokuapp.com', '127.0.0.1:8000']
 
 
 # Application definition
