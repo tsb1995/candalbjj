@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+  <!-- Instructors section -->
+
+<section class="service_section layout_padding">
+<div class="container">
+    <div class="heading_container">
+    <h2>
+        Inst<span>ruc</span>tors
+    </h2>
+    <p>
+        adipiscingelit,sed do eiusmod tempor incididunt ut labore et dolore magn
+    </p>
+    </div>
+    <div class="row">
+    <div class="col-lg-6 ">
+        <div class="img-container tab-content">
+        <div class="img-box tab-pane fade show active" id="img1" role="tabpanel">
+            <img src="{% static 'images/instructor-img1.jpg' %}" alt="" />
+        </div>
+        <div class="img-box tab-pane fade  " id="img2" role="tabpanel">
+            <img src="{% static 'images/instructor-img2.jpg' %}" alt="" />
+        </div>
+        <div class="img-box tab-pane fade  " id="img3" role="tabpanel">
+            <img src="{% static 'images/service-img.jpg' %}" alt="" />
+        </div>
+        <div class="img-box tab-pane fade  " id="img4" role="tabpanel">
+            <img src="{% static 'images/service-img.jpg' %}" alt="" />
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="detail-container nav nav-tabs" id="myTab" role="tablist">
+        <div class="detail-box active" id="img1-tab" data-toggle="tab" href="#img1" role="tab" aria-selected="true">
+            <h4>
+            Victor <br />
+            Candal
+            </h4>
+        </div>
+        <div class="detail-box" id="img2-tab" data-toggle="tab" href="#img2" role="tab" aria-selected="false">
+            <h4>
+            Carl <br />
+            Bohn
+            </h4>
+        </div>
+        <div class="detail-box" id="img2-tab" data-toggle="tab" href="#img3" role="tab" aria-selected="false">
+            <h4>
+            Ivan <br />
+            Aguayo
+            </h4>
+        </div>
+        <div class="detail-box" id="img2-tab" data-toggle="tab" href="#img4" role="tab" aria-selected="false">
+            <h4>
+            Ruben<br />
+            Candal
+            </h4>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="btn-box">
+    <a href="contact">
+        Learn More
+    </a>
+    </div>
+</div>
+</section>
+
+  <!-- end instructors section -->
+{% endblock %}

@@ -1,0 +1,1 @@
+web: gunicorn candalbjj.wsgi --log-file =
