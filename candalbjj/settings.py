@@ -32,7 +32,7 @@ MAPS_API_KEY = os.getenv('MAPS_API_KEY', MAPS_API_KEY_ALT)
 DEBUG = False
 
 # Allow heroku to host as well as local server
-ALLOWED_HOSTS = ['candalbjj.herokuapp.com', '127.0.0.1:8000', '127.0.0.1']
+ALLOWED_HOSTS = ['candalbjj.herokuapp.com', '127.0.0.1:8000', '127.0.0.1', 'localhost']
 
 
 # Application definition

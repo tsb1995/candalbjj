@@ -9,7 +9,7 @@ from . GooglePlaces import *
 
 def index(request):
     # # For using google places api if JS fails
-    # api = GooglePlaces("AIzaSyDpJeiOSkitSPqzA-dHqCZnRkf7-_ceJUY")
+    # api = GooglePlaces("INSERT API KEY HERE")
     # fields = ['name', 'website', 'rating', 'review']
     # details = api.get_place_details("ChIJe-_o2Sgp3YARE02PnQhDX2A", fields)
     # print(details)
