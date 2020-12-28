@@ -51,7 +51,7 @@ def send_mail(request):
         subject = "Candal's Martial Arts Contact",
         message = "Hey! Thanks for contacting us at Candal's Martial Arts. We will be getting back to you as soon as possible to bring more information on our Martial Arts Classes",
         from_email = 'tsb1995@gmail.com',
-        recipient_list = ['tsb1995@gmail.com'],
+        recipient_list = [email],
         fail_silently=False,
     )
 
@@ -59,7 +59,7 @@ def send_mail(request):
         subject = "New Site Contact",
         message = "A possible new student has contacted us. Their name is {}, phone number {}, and email {}.".format(name, phone, email),
         from_email = 'tsb1995@gmail.com',
-        recipient_list = [email],
+        recipient_list = ['tsb1995@gmail.com'],
         fail_silently=False,
     )
 
