@@ -59,7 +59,7 @@ def send_mail(request):
         subject = "New Site Contact",
         message = "A possible new student has contacted us. Their name is {}, phone number {}, and email {}.".format(name, phone, email),
         from_email = 'tsb1995@gmail.com',
-        recipient_list = ['tsb1995@gmail.com'],
+        recipient_list = [email],
         fail_silently=False,
     )
 
